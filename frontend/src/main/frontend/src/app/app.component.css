@@ -1,21 +1,27 @@
-header {
-    text-align: center;
+.drop-box {
+  cursor: pointer;
+  background: #F8F8F8;
+  border: 5px dashed #DDD;
+  text-align: center;
+  padding: 40px;
 }
-
-.header h1 {
-    font-family: serif;
-    font-size: 38px;
-    font-family: 'Times New Roman';
+ 
+.drag-over-title {
+  display: none;
 }
-
-.content {
-    margin: 100px;
+ 
+.drop-box.dragover {
+  opacity: 0.6;
 }
-
-.margin25 {
-    margin: 25px;
+ 
+.drop-box.dragover .drag-over-title {
+  display: block;
 }
-
-.upload {
-    cursor: pointer;
+ 
+.drop-box.dragover .drag-in-title {
+  display: none;
+}
+ 
+input[type='file'] {
+  display: none;
 }
